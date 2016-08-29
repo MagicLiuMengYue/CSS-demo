@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	.wrap{
+		position: relative;
+		width:220px;
+		height: 220px;
+		border-radius: 50%;
+	}
+	img{
+		width:220px;
+		height: 220px;
+		border-radius: 50%;
+		z-index: 999;
+	}
+	.wrap .img{
+		width:220px;
+		height: 220px;
+		border-radius: 50%;
+		-webkit-transition: all 0.35s linear;
+		-moz-transition:all 0.35s linear;
+		-ms-transition: all 0.35s linear;
+		-o-transition: all 0.35s linear;
+		transition:all 0.35s linear;
+		z-index: 3;
+		position: absolute;
+	}
+	.info{
+		position: absolute;
+		top: 0;left:0;
+		width: 220px;
+		height: 220px;
+		border-radius: 50%;
+		z-index: 2;
+	}
+	.wrap .img:hover{
+		-webkit-transform: scale(0.5) translateX(200px) translateY(-50%);
+		-moz-transform: scale(0.5) translateX(200px) translateY(-50%);
+		-ms-transform: scale(0.5) translateX(200px) translateY(-50%);
+		-o-transform: scale(0.5) translateX(200px) translateY(-50%);
+		transform: scale(0.5) translateX(200px) translateY(-50%);
+	}
+	.info{
+		-webkit-transition: all 0.35s linear ;
+		-moz-transition: all 0.35s linear ;
+		-ms-transition: all 0.35s linear ;
+		-o-transition: all 0.35s linear ;
+		transition: all 0.35s linear ;
+	}
+
+	/*.info:hover{*/
+		/*-webkit-transform: translateX(-100%);*/
+		/*-moz-transform: translateX(-100%);*/
+		/*-ms-transform: translateX(-100%);*/
+		/*-o-transform: translateX(-100%);*/
+		/*transform: translateX(-100%);*/
+	/*}*/
+
+	
+
+</style>
+<body>
+<div class="wrap">
+	<a href="http://www.shangpin.com/product/30371330">
+		<div class="img"><img src="images/img01.jpg"></div>
+		<div class="info"><img src="images/img02.jpg"/></div>
+	</a>
+</div>
+</body>
+</html>

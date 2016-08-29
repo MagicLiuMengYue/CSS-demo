@@ -1,0 +1,53 @@
+@charset"utf-8";
+/**定位**/
+#dingwei{
+	border:0;
+	background:url(images/bg_4.jpg) no-repeat;
+}
+/*icons*/
+#icons{border:0;overflow:hidden;}
+#icons ul{
+	padding-top:100px;padding-left:50px;
+}
+#icons ul li{
+	float:left;width:300px;height:175px;
+	margin-left:5px;
+
+}
+#icons ul b{
+	float:left;width:85px;height:80px;
+	background-image:url(images/iconlist_3.png);
+	margin-right:10px;
+}
+#icons ul b:hover{
+	-webkit-animation:jump 0.3s linear 0s 2;
+}
+#icons ul div{
+	float:left;width:200px;line-height:20px;
+	color:#a3a3a3;
+}
+#icons ul div h3{
+	margin:10px auto;font-size:16pt;
+}
+@-webkit-keyframes jump{
+	from{
+		transform:rotate(0deg);opacity:1;
+	}
+	25%{
+		transform:rotate(-10deg);opacity:0.5;
+	}
+	50%{
+		transform:rotate(0deg);opacity:1;
+	}
+	75%{
+		transform:rotate(10deg);opacity:0.5;
+	}
+	to{
+		transform:rotate(0deg);opacity:1;
+	}
+}
+
+
+
+
+

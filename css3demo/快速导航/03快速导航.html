@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style type="text/css">
+
+
+        body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd, input { border: 0 none; margin: 0; padding: 0; }
+        body {/* background: url("images/bodyBg.jpg") no-repeat scroll center top #000000; */font-family: '新宋体' , '宋体' ,Verdana; font-size: 12px; color: #EEEEEE;background: #ffffff;padding: 50px }
+       
+        /*快速导航*/
+        #fast_navbg  { position: absolute;animation: fast_nav_bt 0.5s  forwards;top: 0;left: 0}
+        #fast_nav_bt {background: url("images/fast_nav.png") no-repeat; width: 72px; height: 72px; text-indent: -999px; position: absolute;  cursor: pointer; z-index: 500; left: 0; top: 0;
+            transition: left 0.3s linear, top 0.3s linear; }
+        .fast_nav{position: absolute;border-radius: 10px}
+        .fast_nav01 {background:red; left: -65px;animation: fast_nav01 0.3s 0.5s forwards linear}
+        .fast_nav02 { background:green; top: -65px; left: 35px;animation: fast_nav02 0.3s 0.8s forwards linear}
+        .fast_nav03 { background:blue;  top: 35px;left: 35px;animation: fast_nav03 0.3s 1.2s forwards linear}
+        .fast_nav04 { background:yellow; top: 35px;left: -65px ;animation: fast_nav04 0.3s 1.5s alternate forwards linear}
+        #fast_nav_bt {animation: fast_nav_bt 0.3s  forwards}
+        /*按钮位移*/
+        @-webkit-keyframes fast_nav_bt {
+            from {top:0px;left:0px;}
+            to {top:250px;left:250px;}
+        }
+        @-o-keyframes fast_nav_bt {
+            from {top:0px;left:0px;}
+            to {top:250px;left:250px;}
+        }
+        @-moz-keyframes fast_nav_bt {
+            from {top:0px;left:0px;}
+            to {top:250px;left:250px;}
+        }
+
+        /*背景位移*/
+        @-webkit-keyframes fast_navbg {
+            from {top:0px;left:0px;}
+            to {top:250px;left:250px;}
+        }
+        @-o-keyframes fast_navbg {
+            from {top:0px;left:0px;}
+            to {top:250px;left:250px;}
+        }
+        @-moz-keyframes fast_navbg {
+            from {top:0px;left:0px;}
+            to {top:250px;left:250px;}
+        }
+
+        /*list1*/
+        @-webkit-keyframes fast_nav01 {
+            from {height: 0;width:100px;top: 36px;}
+            to {height: 100px;width: 100px;top: -65px}
+        }
+        @-o-keyframes fast_nav01 {
+            from {height: 0;width:100px;top: 36px;}
+            to {height: 100px;width: 100px;top: -65px}
+        }
+        @-moz-keyframes fast_nav01 {
+            from {height: 0;width:100px;top: 36px;}
+            to {height: 100px;width: 100px;top: -65px}
+        }
+        /*list2*/
+        @-webkit-keyframes fast_nav02 {
+            from {height: 100px;width:0;}
+            to {height: 100px;width: 100px;}
+        }
+        @-o-keyframes fast_nav02 {
+            from {height: 100px;width:0;}
+            to {height: 100px;width: 100px;}
+        }
+        @-moz-keyframes fast_nav02 {
+            from {height: 100px;width:0;}
+            to {height: 100px;width: 100px;}
+        }
+        /*list3*/
+        @-webkit-keyframes fast_nav03 {
+            from {height: 0;width:100px;top: 35px;}
+            to {height: 100px;width: 100px;top: 35px}
+        }
+        @-o-keyframes fast_nav03 {
+            from {height: 0;width:100px;top: 35px;}
+            to {height: 100px;width: 100px;top: 35px}
+        }
+        @-moz-keyframes fast_nav03 {
+            from {height: 0;width:100px;top: 35px;}
+            to {height: 100px;width: 100px;top: 35px}
+        }
+        /*list4*/
+        @-webkit-keyframes fast_nav04 {
+            from {height: 100px;width:0;}
+            to {height: 100px;width: 100px;}
+        }
+        @-o-keyframes fast_nav04 {
+            from {height: 100px;width:0;}
+            to {height: 100px;width: 100px;}
+        }
+        @-moz-keyframes fast_nav04 {
+            from {height: 100px;width:0;}
+            to {height: 100px;width: 100px;}
+        }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="nav">
+        <div id="fast_nav_bt">fast_nav</div>
+        <div id="fast_navbg" class="fast_nav">
+            <div class="fast_nav fast_nav01" ></div>
+            <div class="fast_nav fast_nav02" ></div>
+            <div class="fast_nav fast_nav03" ></div>
+            <div class="fast_nav fast_nav04"></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

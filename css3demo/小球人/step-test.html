@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>Document</title>
+</head>
+<style>
+    .circle{
+        width:200px;
+        height:200px;
+        position:absolute;
+        border:1px solid #eee;
+        /*红黄蓝  停留在蓝色 跳跃变换*/
+        /*-webkit-animation:circle 2s steps(1,end) 1s 1 forwards;*/
+
+        /*红黄 跳跃变换*/
+        -webkit-animation:circle 2s steps(1,end) 1s infinite;
+
+        /*黄蓝 停留在蓝色 跳跃变换*/
+        /*-webkit-animation:circle 2s steps(1,start) 1s 1 forwards;*/
+
+        /*黄蓝  停留白色 跳跃变换*/
+        /*-webkit-animation:circle 2s steps(1,start) 1s 1 backwards;*/
+
+        /*红黄  停留白色 跳跃变换*/
+        /*-webkit-animation:circle 2s steps(1,end) 1s 1 backwards;*/
+
+        /*红橘黄灰白  停留白色 过渡变化*/
+        /*-webkit-animation:circle 2s steps(2,end) 1s 1 backwards;*/
+
+        /*红黄蓝  停留白色  过渡变换*/
+        /*-webkit-animation:circle 2s ease 1s 1 backwards;*/
+    }
+    @-webkit-keyframes circle {
+        0% {background: red}
+        50%{background: yellow}
+        100% {background: blue}
+    }
+    /*每个百分比为一帧*/
+    /*改变step第一个参数，效果过渡，加forwards 停留在蓝色*/
+    /*第一个参数将每一帧的间隔等分*/
+</style>
+<body>
+<div class="circle"></div>
+</body>
+</html>

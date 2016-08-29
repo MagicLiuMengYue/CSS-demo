@@ -1,0 +1,33 @@
+@charset"utf-8";
+/*******描述*******/
+#descripition{border:0px;text-align:center;}
+#descripition>h3,#descripition>p{padding-top:30px;}
+#descripition>h3{font-size:28pt;font-weight:normal;
+				color:#424242;font-family:"华文细黑";
+}
+#descripition>p{
+	font-size:13pt;line-height:30px;color:#949494;
+}
+#descripition>div{
+	width:638px;height:298px;
+	background-image:url(images/iconlist_2.png);
+	background-position:-1655px 0;
+	margin:45px auto 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

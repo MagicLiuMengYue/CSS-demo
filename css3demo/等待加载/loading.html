@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0"/>
+    <!--开启对webapp程序的支持-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!--全屏模式浏览-->
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <!--改变Safari状态栏的外观-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>TopShop</title>
+    <link href="/css/base.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/font-css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css"/>
+
+    <!--icon-->
+    <link rel="apple-touch-icon" href="/images/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/touch-icon-iphone4.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/touch-icon-newipad.png">
+    <!-- 启动自定义图片(png, 320X640) -->
+    <link rel="apple-touch-startup-image" sizes="72x72" href="/images/logo/loading.png">
+    <script src="/js/core.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript" charset="utf-8">
+        var ver = "?20121023001";
+        loader = SP.core
+                .install("/js/jquery.min.js?" + ver)
+                .using("/js/lazyload.js?" + ver)
+                .excute()
+                .using("/js/config.sim.js?" + ver)
+                .excute()
+                .using("js/index.js?23" + ver)
+                .excute();
+    </script>
+</head>
+<body>
+<style>
+    /*单球加载*/
+    #box1{
+        width: 200px;
+        height: 20px;
+        border: 2px solid #5e5e5e;
+        border-radius: 5px;
+    }
+    #box1 .boll{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #8e8e8e;
+        float: left;
+        animation: move 2s ease-in-out infinite alternate; /*反向移动*/
+    }
+    @-webkit-keyframes move {
+        to{
+            margin-left:90%;
+        }
+    }
+
+    /*音符加载*/
+    #box2{
+        width: 100px;
+        height: 100px;
+        background: #fff;
+        margin: 50px;
+    }
+    #box2 div{
+        width: 6px;
+        height: 60px;
+        background: green;
+        float:left;
+        margin-right: 5px;
+
+        -webkit-animation: scale 1s infinite ease-in-out;
+        -moz-animation: scale 1s infinite ease-in-out;
+        -ms-animation: scale 1s infinite ease-in-out;
+        -o-animation: scale 1s infinite ease-in-out;
+        animation: scale 1s infinite ease-in-out;
+    }
+    #box2 .line2{
+        -webkit-animation-delay: -0.9s;
+        -moz-animation-delay: -0.9s;
+        -o-animation-delay: -0.9s;
+        animation-delay: -0.9s;
+    }
+    #box2 .line3{
+        -webkit-animation-delay: -0.8s;
+        -moz-animation-delay: -0.8s;
+        -o-animation-delay: -0.8s;
+        animation-delay: -0.8s;
+    }
+    #box2 .line4{
+        -webkit-animation-delay: -0.7s;
+        -moz-animation-delay: -0.7s;
+        -o-animation-delay: -0.7s;
+        animation-delay: -0.7s;
+    }
+    #box2 .line5{
+        -webkit-animation-delay: -0.6s;
+        -moz-animation-delay: -0.6s;
+        -o-animation-delay: -0.6s;
+        animation-delay: -0.6s;
+    }
+    @-webkit-keyframes scale {
+        0%, 40%, 100% {
+            -webkit-transform: scaleY(0.4) ;
+            -moz-transform: scaleY(0.4) ;
+            -ms-transform: scaleY(0.4) ;
+            -o-transform: scaleY(0.4) ;
+            transform: scaleY(0.4) ;
+        }
+        20% {
+            -webkit-transform: scaleY(1.0);
+            -moz-transform: scaleY(1.0);
+            -ms-transform: scaleY(1.0);
+            -o-transform: scaleY(1.0);
+            transform: scaleY(1.0);
+        }
+    }
+    @-moz-keyframes scale {
+        0%, 40%, 100% {
+            -webkit-transform: scaleY(0.4) ;
+            -moz-transform: scaleY(0.4) ;
+            -ms-transform: scaleY(0.4) ;
+            -o-transform: scaleY(0.4) ;
+            transform: scaleY(0.4) ;
+        }
+        20% {
+            -webkit-transform: scaleY(1.0);
+            -moz-transform: scaleY(1.0);
+            -ms-transform: scaleY(1.0);
+            -o-transform: scaleY(1.0);
+            transform: scaleY(1.0);
+        }
+    }
+
+</style>
+    <div id="box1">
+        <div class="boll"></div>
+    </div>
+    <div id="box2">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+        <div class="line5"></div>
+    </div>
+
+
+
+    <div id="box3">
+
+    </div>
+
+
+
+</body>
+</html>

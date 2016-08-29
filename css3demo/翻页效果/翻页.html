@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+
+	@-webkit-keyframes spinner {
+		from {
+			-webkit-transform: rotateY(0deg);
+			-moz-transform: rotateY(0deg);
+			-ms-transform: rotateY(0deg);
+			-o-transform: rotateY(0deg);
+			transform: rotateY(0deg);
+		}
+		to {
+			-webkit-transform: rotateY(-360deg);
+			-moz-transform:  rotateY(-360deg);
+			-ms-transform:  rotateY(-360deg);
+			-o-transform:  rotateY(-360deg);
+			transform: rotateY(-360deg) ;
+		}
+	}
+	@-moz-keyframes spinner {
+		from {
+			-webkit-transform: rotateY(0deg);
+			-moz-transform: rotateY(0deg);
+			-ms-transform: rotateY(0deg);
+			-o-transform: rotateY(0deg);
+			transform: rotateY(0deg);
+		}
+		to {
+			-webkit-transform: rotateY(-360deg);
+			-moz-transform:  rotateY(-360deg);
+			-ms-transform:  rotateY(-360deg);
+			-o-transform:  rotateY(-360deg);
+			transform: rotateY(-360deg) ;
+		}
+	}
+	/*@-ms-keyframes spinner {*/
+		/*from {*/
+			/*-webkit-transform: rotateY(0deg);*/
+			/*-moz-transform: rotateY(0deg);*/
+			/*-ms-transform: rotateY(0deg);*/
+			/*-o-transform: rotateY(0deg);*/
+			/*transform: rotateY(0deg);*/
+		/*}*/
+		/*to {*/
+			/*-webkit-transform: rotateY(-360deg);*/
+			/*-moz-transform:  rotateY(-360deg);*/
+			/*-ms-transform:  rotateY(-360deg);*/
+			/*-o-transform:  rotateY(-360deg);*/
+			/*transform: rotateY(-360deg) ;*/
+		/*}*/
+	/*}*/
+	/*@-o-keyframes spinner {*/
+		/*from {*/
+			/*-webkit-transform: rotateY(0deg);*/
+			/*-moz-transform: rotateY(0deg);*/
+			/*-ms-transform: rotateY(0deg);*/
+			/*-o-transform: rotateY(0deg);*/
+			/*transform: rotateY(0deg);*/
+		/*}*/
+		/*to {*/
+			/*-webkit-transform: rotateY(-360deg);*/
+			/*-moz-transform:  rotateY(-360deg);*/
+			/*-ms-transform:  rotateY(-360deg);*/
+			/*-o-transform:  rotateY(-360deg);*/
+			/*transform: rotateY(-360deg) ;*/
+		/*}*/
+	/*}*/
+	#stage {
+		margin: 1em auto;
+		-webkit-perspective: 1200px;
+		-moz-perspective: 1200px;
+		/*-o-perspective: 1200px;*/
+		/*-ms-perspective: 1200px;*/
+		perspective: 1200px;
+	}
+	#spinner {
+		-webkit-animation:spinner 6s linear infinite  ;
+		-moz-animation:spinner 6s linear infinite  ;
+		/*-ms-animation:spinner 6s linear infinite  ;*/
+		/*-o-animation:spinner 6s linear infinite  ;*/
+		animation:spinner 6s linear infinite ;
+
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		
+		/*-o-transform-style: preserve-3d;*/
+		/*-ms-transform-style: preserve-3d;*/
+	}
+	#spinner:hover {
+		-webkit-animation-play-state: paused;/*图片停止*/
+		-moz-animation-play-state: paused;/*图片停止*/
+		/*-ms-animation-play-state: paused;/!*图片停止*!/*/
+		/*-o-animation-play-state: paused;/!*图片停止*!/*/
+	}
+	#spinner img {
+		position: absolute;
+		border: 1px solid #ccc;
+		background: rgba(255,255,255,0.8);
+		box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+	}
+</style>
+<body>
+	<div id="stage" style="padding: 100px 300px; height: 160px;">
+		<div id="spinner" style="-webkit-transform-origin: 180px 0 0;-moz-transform-origin: 180px 0 0;-o-transform-origin: 180px 0 0;-ms-transform-origin: 180px 0 0;">
+			<img style="-webkit-transform: rotateY(0deg) translateX(180px);-moz-transform: rotateY(0deg) translateX(180px);-ms-transform: rotateY(0deg) translateX(180px);-o-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 160px;" src="images/img01.jpg" width="100" height="160">
+			<img style="-webkit-transform: rotateY(-72deg) translateX(180px); -moz-transform: rotateY(-72deg) translateX(180px);-ms-transform: rotateY(-72deg) translateX(180px);-o-transform: rotateY(-72deg) translateX(180px);padding: 0 0 0 147px;" src="images/img02.jpg" width="113" height="160">
+			<img style="-webkit-transform: rotateY(-144deg) translateX(180px); -moz-transform: rotateY(-144deg) translateX(180px);-ms-transform: rotateY(-144deg) translateX(180px);-o-transform: rotateY(-144deg) translateX(180px);padding: 0 0 0 120px;" src="images/img03.jpg" width="140" height="160">
+			<img style="-webkit-transform: rotateY(-216deg) translateX(180px);-moz-transform: rotateY(-216deg) translateX(180px);-ms-transform: rotateY(-216deg) translateX(180px);-o-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 147px;" src="images/img01.jpg" width="113" height="160">
+			<img style="-webkit-transform: rotateY(-288deg) translateX(180px);-moz-transform: rotateY(-288deg) translateX(180px); -ms-transform: rotateY(-288deg) translateX(180px);-o-transform: rotateY(-288deg) translateX(180px);padding: 0 0 0 122px;" src="images/img02.jpg" width="138" height="160">
+		</div>
+	</div>
+</body>
+</html>

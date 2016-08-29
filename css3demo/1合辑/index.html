@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style type="text/css">
+
+
+        body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd, input { border: 0 none; margin: 0; padding: 0; }
+        body {/* background: url("images/bodyBg.jpg") no-repeat scroll center top #000000; */font-family: '新宋体' , '宋体' ,Verdana; font-size: 12px; color: #EEEEEE;background: #ffffff;padding: 50px }
+
+        .clr:after{
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;}
+        /*banner*/
+        .banner{margin: 0 auto;text-align: center;height: 100px}
+        .banner img:hover{
+            -webkit-transform: rotateZ(5deg);
+            -moz-transform: rotateZ(5deg);
+            -ms-transform: rotateZ(5deg);
+            -o-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);}
+       
+        /*快速导航*/
+        #fast_navbg  { position: absolute;/*animation: fast_nav_bt 0.5s  forwards;*/top: 0;right: 200px}
+        #fast_nav_bt {background: url("images/fast_nav.png") no-repeat; width: 72px; height: 72px; text-indent: -999px;  cursor: pointer; z-index: 500;position: relative;
+            /*transition: left 0.3s linear, top 0.3s linear;*/ }
+        .fast_nav{position: absolute;border-radius: 10px}
+        .fast_nav01 {background:red; left: -65px;/*animation: fast_nav01 0.3s 0.5s forwards linear*/}
+        .fast_nav02 { background:green; top: -65px; left: 35px;animation: fast_nav02 0.3s 0.8s forwards linear}
+        .fast_nav03 { background:blue;  top: 35px;left: 35px;animation: fast_nav03 0.3s 1.2s forwards linear}
+        .fast_nav04 { background:yellow; top: 35px;left: -65px ;animation: fast_nav04 0.3s 1.5s alternate forwards linear}
+        /*#fast_nav_bt {animation: fast_nav_bt 0.3s  forwards}*/
+        /*按钮位移*/
+        @-webkit-keyframes fast_nav_bt {
+            from {top:0px;left:0px;}
+            to {top:250px;left:250px;}
+        }
+        @-o-keyframes fast_nav_bt {
+            from {top:0px;left:0px;}
+            to {top:250px;left:250px;}
+        }
+        @-moz-keyframes fast_nav_bt {
+            from {top:0px;left:0px;}
+            to {top:250px;left:250px;}
+        }
+
+        /*背景位移*/
+        @-webkit-keyframes fast_navbg {
+            from {top:0px;left:0px;}
+            to {top:250px;left:250px;}
+        }
+        @-o-keyframes fast_navbg {
+            from {top:0px;left:0px;}
+            to {top:250px;left:250px;}
+        }
+        @-moz-keyframes fast_navbg {
+            from {top:0px;left:0px;}
+            to {top:250px;left:250px;}
+        }
+
+        /*list1*/
+        @-webkit-keyframes fast_nav01 {
+            from {height: 0;width:100px;top: 36px;}
+            to {height: 100px;width: 100px;top: -65px}
+        }
+        @-o-keyframes fast_nav01 {
+            from {height: 0;width:100px;top: 36px;}
+            to {height: 100px;width: 100px;top: -65px}
+        }
+        @-moz-keyframes fast_nav01 {
+            from {height: 0;width:100px;top: 36px;}
+            to {height: 100px;width: 100px;top: -65px}
+        }
+        /*list2*/
+        @-webkit-keyframes fast_nav02 {
+            from {height: 100px;width:0;}
+            to {height: 100px;width: 100px;}
+        }
+        @-o-keyframes fast_nav02 {
+            from {height: 100px;width:0;}
+            to {height: 100px;width: 100px;}
+        }
+        @-moz-keyframes fast_nav02 {
+            from {height: 100px;width:0;}
+            to {height: 100px;width: 100px;}
+        }
+        /*list3*/
+        @-webkit-keyframes fast_nav03 {
+            from {height: 0;width:100px;top: 35px;}
+            to {height: 100px;width: 100px;top: 35px}
+        }
+        @-o-keyframes fast_nav03 {
+            from {height: 0;width:100px;top: 35px;}
+            to {height: 100px;width: 100px;top: 35px}
+        }
+        @-moz-keyframes fast_nav03 {
+            from {height: 0;width:100px;top: 35px;}
+            to {height: 100px;width: 100px;top: 35px}
+        }
+        /*list4*/
+        @-webkit-keyframes fast_nav04 {
+            from {height: 100px;width:0;}
+            to {height: 100px;width: 100px;}
+        }
+        @-o-keyframes fast_nav04 {
+            from {height: 100px;width:0;}
+            to {height: 100px;width: 100px;}
+        }
+        @-moz-keyframes fast_nav04 {
+            from {height: 100px;width:0;}
+            to {height: 100px;width: 100px;}
+        }
+
+        /*新闻列表*/
+        .list_box{border:1px solid #fff ;margin: 50px;list-style: none}
+        .list_box .list{padding: 0 10px ;float: left;
+            -webkit-animation: newslist 0.5s 3s 1 linear;
+            -o-animation: newslist 0.5s 3s 1 linear;
+            animation: newslist 0.5s 3s 1 linear;}
+        .list_box .list a{color: #000000;text-decoration: none}
+
+        @-webkit-keyframes newslist {
+            from{
+                -webkit-transform: rotateX(0deg);
+                -moz-transform: rotateX(0deg);
+                -ms-transform: rotateX(0deg);
+                -o-transform: rotateX(0deg);
+                transform: rotateX(0deg);}
+            to{
+                -webkit-transform: rotateX(180deg);
+                -moz-transform: rotateX(180deg);
+                -ms-transform: rotateX(180deg);
+                -o-transform: rotateX(180deg);
+                transform: rotateX(180deg);
+            }
+        }
+
+        .product_box{list-style: none;position: absolute;top: 0;left: 0}
+        .product_box .sp_list{height: 50px;line-height: 50px;width: 100px;color: #fff;background: #333333;font-size: 14px;text-align: left;padding-left: 5px}
+        .product_box .sp_list:hover{
+            width: 200px;
+            -webkit-transition: width 0.5s ease-in-out ;
+            -moz-transition: width 0.5s ease-in-out;
+            -ms-transition: width 0.5s ease-in-out;
+            -o-transition: width 0.5s ease-in-out;
+            transition: width 0.5s ease-in-out;}
+
+            /*-webkit-animation: sp_list 0.5s ease-out forwards ;*/
+            /*-o-animation: sp_list 0.5s ease-out forwards;*/
+            /*animation: sp_list 0.5s ease-out forwards;}*/
+        /*@-webkit-keyframes sp_list {*/
+            /*from{width: 100px}*/
+            /*to{width: 200px;}*/
+        /*}*/
+
+.pic_box{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-rule: 1px solid #000;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+    width: 700px;
+    padding-top: 35px;
+    margin-left: 200px;
+}
+
+
+    </style>
+
+</head>
+<body>
+<div class="container_box" style="position: relative">
+    <div class="banner">
+        <img src="images/sp.jpg"/>
+    </div>
+    <!--<div class="nav" style="width: 200px;height: 200px;position:absolute;top: 40px;right: 200px">-->
+
+        <!--<div id="fast_nav_bt" onclick="navbt()"></div>-->
+
+        <!--<div id="fast_navbg" class="fast_nav">-->
+            <!--<div class="fast_nav fast_nav01" ></div>-->
+            <!--<div class="fast_nav fast_nav02" ></div>-->
+            <!--<div class="fast_nav fast_nav03" ></div>-->
+            <!--<div class="fast_nav fast_nav04"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div class="container" style="width: 960px;margin: 0 auto;position: relative">
+        <!--商品列表-->
+        <ul class="product_box">
+            <li class="sp_list">女装</li>
+            <li class="sp_list">男装</li>
+            <li class="sp_list">设计师</li>
+            <li class="sp_list">饰品</li>
+            <li class="sp_list">男包</li>
+            <li class="sp_list">女包</li>
+            <li class="sp_list">鞋靴</li>
+        </ul>
+        <div class="pic_box">
+            <img src="images/img01.jpg"/>
+            <img src="images/img02.jpg"/>
+            <img src="images/img03.jpg"/>
+        </div>
+
+        <!--新闻列表-->
+        <ul class="list_box clr">
+            <li class="list"><img src="images/logo01.jpg"/></li>
+            <li class="list"><img src="images/logo02.jpg"/></li>
+            <li class="list"><img src="images/logo03.jpg"/></li>
+            <li class="list"><img src="images/logo04.jpg"/></li>
+            <li class="list"><img src="images/logo05.jpg"/></li>
+            <li class="list"><img src="images/logo06.jpg"/></li>
+            <li class="list"><img src="images/logo07.jpg"/></li>
+            <li class="list"><img src="images/logo08.jpg"/></li>
+            <li class="list"><img src="images/logo09.jpg"/></li>
+            <li class="list"><img src="images/logo10.jpg"/></li>
+            <li class="list"><img src="images/logo10.jpg"/></li>
+            <li class="list"><img src="images/logo10.jpg"/></li>
+        </ul>
+    </div>
+</div>
+
+
+    <script>
+       function navbt(){
+            document.getElementsByClassName("fast_nav01").style.animation="fast_nav01 0.3s 0.5s forwards linear";
+        }
+    </script>
+</body>
+</html>
